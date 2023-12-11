@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,600&family=Mukta:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500;1,700&family=Source+Code+Pro:wght@500&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
 }
 
 nav {
@@ -10,6 +17,7 @@ nav {
     justify-content: space-around;
     height: 100px;
     background-color: #999;
+    max-width: 1150px
 }
 
 h1 {
@@ -43,6 +51,7 @@ ul li {
 
 ul a {
     text-decoration: none;
+    color: #fff;
 }
 
 a:hover {
@@ -91,11 +100,11 @@ header p {
 }
 
 .section1 h4 {
-    position: absolute;
+    position: relative;
     font-size: 25px;
     font-weight: 800;
     width: 430px;
-    top: 150px;
+    bottom: 20px;
     left: 150px;
 
 }
@@ -108,14 +117,14 @@ header p {
 
 .section1 .paragrafo1 {
     position: absolute;
-    top: 280px;
+    top: 100px;
     left: 150px;
 
 }
 
 .section1 .paragrafo2 {
     position: absolute;
-    top: 380px;
+    top: 200px;
     left: 150px;
 
 }
@@ -124,6 +133,7 @@ header p {
     position: absolute;
     background-image: url('./img/rectangle\ 1.svg');
     left: 660px;
+    bottom: 200px;
 }
 
 .section2 {
@@ -133,7 +143,7 @@ header p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 500px;
     font-weight: 400;
 
 
@@ -233,6 +243,7 @@ header p {
 
 .footer .span {
     color: #EAAB0A;
+
 }
 
 .footer .event_span {
@@ -245,6 +256,7 @@ header p {
     font-weight: 400;
     letter-spacing: -0.3px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 
@@ -262,5 +274,25 @@ header p {
 .footer div a {
     font-size: 10px;
     margin-left: 20px;
+
+}
+
+
+/* responsividade */
+
+@media screen and (max-width:886px) {
+    header h2 {
+        font-size: 3rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:550px) {
+    header h2 {
+        font-size: 5rem;
+    }
+
 
 }
